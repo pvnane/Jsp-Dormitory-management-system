@@ -24,6 +24,7 @@ public class JDBCUtil {
             throwables.printStackTrace();
         }
         return connection;
+
     }
 
     public static void release(Connection connection, Statement statement, ResultSet resultSet){
@@ -40,6 +41,10 @@ public class JDBCUtil {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+
     }
 
+    public static String getUrl() {
+        return url;
+    }
 }
